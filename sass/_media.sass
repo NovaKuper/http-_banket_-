@@ -1,0 +1,140 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+
+    .contact
+        margin-top: 30px
+    footer
+        text-align: center
+        p.footer-phone, p.footer-phone+p
+            text-align: center
+            margin-top: 20px
+        .logo
+            width: 240px
+    .s-offer
+        .open-form
+            input
+                min-width: 80%
+                margin-bottom: 30px
+            button
+                min-width: 80%
+                font-size: 12px
+                padding: 18px 5px
+
+// ≥768px
++media-breakpoint-down(sm)
+    .reverse
+        &.images-cont
+            display: flex
+            flex-direction: column-reverse
+
+    .header
+        .call
+            input
+                min-width: 80%
+                margin-bottom: 20px
+            button
+                min-width: 80%
+    // .s-offer
+    //     .open-form
+    //         input
+    //             min-width: 80%
+    //             margin-bottom: 30px
+    //         button
+    //             min-width: 80%
+    //             font-size: 12px
+    //             padding: 18px 5px
+
+// ≥576px
++media-breakpoint-down(xs)
+    
+    .header
+        .profit
+            div[class^=col-]
+                padding: 5px 20px
+                &:nth-child(2)
+                    &::before, &::after
+                        display: none
+        .top
+            .contact
+                display: none
+            .logo
+                width: 280px
+        .call
+            input
+                min-width: 80%
+                margin-bottom: 30px
+            button
+                min-width: 80%
+                font-size: 12px
+                padding: 18px 5px
+    .section-header
+            font-size: 32px
+            &::before, &::after
+                width: 250px
+                height: 40px
+                margin-left: -125px
+    .photo
+        div[class^="col-"]
+            padding:
+                top: 0
+                bottom: 0
+
+        .images-cont
+            margin-top: 0
+        
+    // .s-offer
+    //     .open-form
+    //         input
+    //             min-width: 80%%
+    //             margin-bottom: 30px
+    //         button
+    //             min-width: 80%
+    //             font-size: 12px
+    //             padding: 18px 5px
+       
+    .s-map
+        
+        .contacts
+            left: 0
+            right: 0
+            bottom: 5%
+            top: auto
+            margin: 0 auto
+
+    .mfp-content
+        #popup-form
+            padding: 10px
+            padding-bottom: 30px
+            input
+                width: 90%
+            .button
+                width: 90%
+    
+        
+    
+
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+    
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

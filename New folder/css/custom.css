@@ -1,8 +1,0 @@
-.celebrate-container {margin: 3%;}
-.celebrate-img {width: 100%;}
-
-@media (min-width: 992px) {
-    .events .card .h3 {
-        font-size: 22px;
-    }
-}
